@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "Cache", path: "Source"),  //, exclude: ["Library/ImageWrapper.swift"]), // relative to the target path
+        .target(name: "Cache", path: "Source"),
         .testTarget(name: "CacheTests", dependencies: ["Cache"], path: "Tests"),
     ]
 )
