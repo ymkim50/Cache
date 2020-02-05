@@ -923,6 +923,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A138C11EB29BFA00881A20 /* UIImage+Extensions.swift in Sources */,
 				D221E5C420D00DDB00BC940E /* DiskStorage.swift in Sources */,
 				D2CF98681F694FFA00CE8F68 /* ImageWrapper.swift in Sources */,
 				D5A9D1C321144B65005DBD3F /* StorageObservationRegistry.swift in Sources */,
@@ -945,7 +946,6 @@
 				D270148820D11040003B45C7 /* Storage+Transform.swift in Sources */,
 				D2CF986A1F694FFA00CE8F68 /* StorageError.swift in Sources */,
 				D5A9D1B721134547005DBD3F /* ObservationToken.swift in Sources */,
-				D5A138C11EB29BFA00881A20 /* UIImage+Extensions.swift in Sources */,
 				D270147820D1046A003B45C7 /* HybridStorage.swift in Sources */,
 				D270148420D10E76003B45C7 /* AsyncStorage.swift in Sources */,
 				D28897051F8B79B300C61DEE /* JSONDecoder+Extensions.swift in Sources */,
