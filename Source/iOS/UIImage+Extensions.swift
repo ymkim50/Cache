@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 /// Helper UIImage extension.
@@ -25,3 +26,4 @@ extension UIImage {
         return hasAlpha ? pngData() : jpegData(compressionQuality: 1.0)
     }
 }
+#endif
