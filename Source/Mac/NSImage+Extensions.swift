@@ -24,7 +24,7 @@ extension NSImage {
     }
 
     /// Convert to data
-    public func cache_toData() -> Data? {
+    func cache_toData() -> Data? {
         guard let data = tiffRepresentation else {
             return nil
         }
