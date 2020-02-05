@@ -4,20 +4,17 @@ import PackageDescription
 
 let package = Package(
     name: "Cache",
+    platforms: [
+        .macOS(.v10_14),
+        .iOS(.v12),
+        .tvOS(.v12),
+    ],
     products: [
-        .library(
-            name: "Cache",
-            targets: ["Cache"]),
+        .library(name: "Cache", targets: ["Cache"]),
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "Cache",
-            path: "Source/Shared",
-            exclude: ["Library/ImageWrapper.swift"]), // relative to the target path
-        .testTarget(
-            name: "CacheTests",
-            dependencies: ["Cache"],
-            path: "Tests"),
+        .target(name: "Cache"), //, path: "Source/Shared", exclude: ["Library/ImageWrapper.swift"]), // relative to the target path
+        .testTarget(name: "CacheTests", dependencies: ["Cache"], path: "Tests"),
     ]
 )
