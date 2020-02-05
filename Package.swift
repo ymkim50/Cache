@@ -13,6 +13,7 @@ let package = Package(
         .library(name: "Cache", targets: ["Cache"]),
     ],
     dependencies: [],
+    swiftLanguageVersions: [v5],
     targets: [
         .target(name: "Cache", path: "Source"),
         .testTarget(name: "CacheTests", dependencies: ["Cache"], path: "Tests"),
