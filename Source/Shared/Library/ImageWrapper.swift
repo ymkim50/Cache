@@ -23,7 +23,7 @@ public struct ImageWrapper: Codable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        guard let data = image.data else {
+        guard let data = image.cache_toData() else {
             throw StorageError.encodingFailed
         }
 
